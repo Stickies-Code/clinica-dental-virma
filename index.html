@@ -52,7 +52,7 @@ details p{margin:0 0 24px;max-width:62ch;color:#4B5034;font-size:16px;line-heigh
 @media (prefers-reduced-motion: reduce){.card,.btn{transition:none}.card:hover{transform:none}}
 @media (max-width: 1000px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:minmax(0,1fr) !important;gap:40px}.nav-links{display:none !important}.h1{font-size:48px !important}.h2{font-size:38px !important}}
 @media (max-width: 1000px){.float{left:16px !important;bottom:16px !important}}
-@media (max-width: 640px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-template-rows:none !important}.gallery .ph{grid-column:auto !important;grid-row:auto !important;aspect-ratio:1 / 1;height:auto !important}.g2,.g3,.g4{grid-template-columns:minmax(0,1fr)}.h1{font-size:40px !important}.h2{font-size:32px !important}.topbar-extra{display:none !important}.sec{padding-top:72px !important;padding-bottom:72px !important}}
+@media (max-width: 640px){.hero-logo{height:120px !important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-template-rows:none !important}.gallery .ph{grid-column:auto !important;grid-row:auto !important;aspect-ratio:1 / 1;height:auto !important}.g2,.g3,.g4{grid-template-columns:minmax(0,1fr)}.h1{font-size:40px !important}.h2{font-size:32px !important}.topbar-extra{display:none !important}.sec{padding-top:72px !important;padding-bottom:72px !important}}
 </style>
 <style>
 html{scroll-behavior:smooth}
@@ -107,6 +107,7 @@ section[id]{scroll-margin-top:16px}
 <section id="inicio" style="padding-top: 72px; padding-bottom: 96px">
 <div class="wrap split" style="grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr)">
 <div style="display: flex; flex-direction: column; gap: 28px">
+<img class="hero-logo" src="img/logo-virma.png" alt="Clínica Dental Virma" style="height: 168px; width: auto; max-width: 100%; align-self: flex-start; display: block; margin-bottom: 4px">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Clínica dental en Cheste · Desde 1997</span>
 <h1 class="h1" style="margin: 0; font: 400 68px/1.04 'Fraunces', Georgia, serif; letter-spacing: -0.025em; text-wrap: balance">Tu sonrisa, en manos de quien <em style="font-style: italic; color: #5A6610">te conoce</em>.</h1>
 <p style="margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; color: #4B5034">Implantes, ortodoncia, estética y odontología para toda la familia. Un equipo con experiencia y un trato cercano, en el centro de Cheste.</p>
@@ -121,16 +122,40 @@ section[id]{scroll-margin-top:16px}
 </div>
 </div>
 <div style="position: relative">
-<div class="ph" data-img="img/hero.jpg" data-alt="Paciente sonriendo en Clínica Dental Virma" style="aspect-ratio: 4 / 5; border-radius: 28px; max-width: 100%">
-<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>
-<span>Foto principal · 4:5<br>Paciente sonriendo en el gabinete<br>o las doctoras con un paciente</span>
-</div>
+<img src="img/hero.jpg" alt="Vecina de Cheste sonriendo en una calle del pueblo" style="aspect-ratio: 4 / 5; border-radius: 28px; max-width: 100%; width: 100%; max-width: 100%; object-fit: cover; display: block">
 <div class="float" style="position: absolute; left: -28px; bottom: 36px; background: #FFFFFF; border-radius: 18px; padding: 18px 22px; display: flex; gap: 14px; align-items: center; box-shadow: 0 20px 44px -24px rgba(30,33,12,.5); max-width: 300px">
 <span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #B2C224; display: flex; align-items: center; justify-content: center">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E330E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-2.5 0-4 2-4 4.8 0 3 1.4 5 2.2 8.2.5 2 1 5 2.6 5 1.8 0 1.6-5.2 4.2-5.2s2.4 5.2 4.2 5.2c1.6 0 2.1-3 2.6-5 .8-3.2 2.2-5.2 2.2-8.2C21 5 19.5 3 17 3c-2 0-3 1.2-5 1.2S9 3 7 3z"></path></svg>
 </span>
 <span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 15px">Dientes fijos en un día</strong><span style="font-size: 13px; color: #5C6145">Implantología con carga inmediata</span></span>
 </div>
+</div>
+</div>
+</section>
+
+<!-- Toda la familia -->
+<section class="sec" style="padding-top: 0; padding-bottom: 104px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px 48px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Para toda la familia</span>
+<h2 class="h2" style="margin: 0; font: 400 48px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">De los 6 a los 90 años, aquí en Cheste</h2>
+</div>
+<p style="margin: 0; max-width: 40ch; color: #4B5034; font-size: 17px; line-height: 1.6">Atendemos a pacientes de todas las edades. Cada etapa de la vida tiene su tratamiento.</p>
+</div>
+<div class="g3">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 18px">
+<img src="img/familia-ninos.jpg" alt="Chaval de Cheste sonriendo con un balón" style="aspect-ratio: 4 / 5; border-radius: 20px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; padding-left: 16px; border-left: 3px solid #B2C224"><strong style="font: 500 22px/1.2 'Fraunces', Georgia, serif; color: #1E210C">Niños y adolescentes</strong><span style="font-size: 15px; color: #4B5034">Revisiones, odontopediatría y ortodoncia</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 18px">
+<img src="img/familia-adultos.jpg" alt="Vecina de Cheste riendo en la plaza" style="aspect-ratio: 4 / 5; border-radius: 20px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; padding-left: 16px; border-left: 3px solid #B2C224"><strong style="font: 500 22px/1.2 'Fraunces', Georgia, serif; color: #1E210C">Adultos</strong><span style="font-size: 15px; color: #4B5034">Estética, limpieza y endodoncia</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 18px">
+<img src="img/familia-mayores.jpg" alt="Vecino mayor de Cheste sonriendo a la puerta de casa" style="aspect-ratio: 4 / 5; border-radius: 20px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; padding-left: 16px; border-left: 3px solid #B2C224"><strong style="font: 500 22px/1.2 'Fraunces', Georgia, serif; color: #1E210C">Mayores</strong><span style="font-size: 15px; color: #4B5034">Implantes y dientes fijos</span></figcaption>
+</figure>
 </div>
 </div>
 </section>
@@ -379,6 +404,7 @@ section[id]{scroll-margin-top:16px}
 </div>
 
 <form data-cita style="background: #FFFFFF; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px" aria-label="Solicitar cita">
+<img src="img/logo-virma.png" alt="" style="height: 84px; width: auto; align-self: flex-start; display: block">
 <h3 style="margin: 0; font: 500 28px/1.2 'Fraunces', Georgia, serif">Te llamamos nosotros</h3>
 <p style="margin: 0 0 4px; color: #4B5034; font-size: 15px; line-height: 1.55">Déjanos tus datos y te contactamos para darte cita.</p>
 <div class="field"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" type="text" autocomplete="name"></div>
