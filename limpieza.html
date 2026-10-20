@@ -46,6 +46,8 @@ details summary::-webkit-details-marker{display:none}
 details summary .plus{flex:none;width:36px;height:36px;border-radius:50%;border:1.5px solid #1E210C;display:flex;align-items:center;justify-content:center;font:400 22px/1 'Figtree',sans-serif;transition:transform .2s ease}
 details[open] summary .plus{transform:rotate(45deg)}
 details p{margin:0 0 24px;max-width:62ch;color:#4B5034;font-size:16px;line-height:1.65}
+.steps{display:grid;gap:20px}
+@media (max-width: 1000px){.steps{grid-template-columns:minmax(0,1fr) !important}}
 @media (prefers-reduced-motion: reduce){details summary .plus{transition:none}}
 </style>
 <style>
@@ -95,117 +97,55 @@ section[id]{scroll-margin-top:16px}
 <img class="hero-logo" src="img/logo-virma.png" alt="Clínica Dental Virma" style="height: 128px; width: auto; max-width: 100%; align-self: flex-start; display: block">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Limpieza y encías</span>
 <h1 class="h1" style="margin: 0; font: 400 64px/1.05 'Fraunces', Georgia, serif; letter-spacing: -0.025em; text-wrap: balance">Encías sanas, dientes para toda la vida</h1>
-<p style="margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; color: #4B5034">La limpieza profesional y el cuidado de las encías son la base para conservar tus dientes a largo plazo.</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir valoración</a><a class="btn btn-ghost" href="#tecnicas">Qué hacemos</a></div>
+<p style="margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; color: #4B5034">Una limpieza profesional y una revisión de encías, rápidas y sin complicaciones, son la base para conservar tus dientes.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir cita</a><a class="btn btn-ghost" href="#que-es">Cuándo venir</a></div>
 </div>
 <img src="img/trat-limpieza.jpg" alt="Instrumental de higiene dental" style="aspect-ratio: 5 / 4; border-radius: 28px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
 <div class="jump" style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 8px">
-<a href="#t1">Limpieza profesional</a><a href="#t2">Revisión de encías</a><a href="#t3">Cuidado en casa y mantenimiento</a><a href="#preguntas">Preguntas frecuentes</a>
+<a href="#que-es">Cuándo venir</a><a href="#pasos">Así es la visita</a><a href="#preguntas">Preguntas</a>
 </div>
 </div>
 </section>
 
-<!-- Qué es -->
 <section id="que-es" class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #FFFFFF">
 <div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
-<div class="split" style="align-items: start">
-<div style="display: flex; flex-direction: column; gap: 16px">
+<div class="split">
+<img src="img/limp-encias.jpg" alt="Sonda periodontal midiendo la encía en un modelo" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<div style="display: flex; flex-direction: column; gap: 22px">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Lo básico</span>
-<h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">¿Por qué importan tanto las encías?</h2>
-</div>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4B5034; max-width: 54ch">Los dientes se sujetan gracias a la encía, el hueso y el ligamento que los rodea. Si se inflaman o se dañan, el diente pierde soporte. Nuestro objetivo es mantenerlos sanos.</p>
-</div>
-<div class="g3">
-<div style="background: #F6F7EC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font: 500 22px/1.25 'Fraunces', Georgia, serif">Previene problemas</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.55">La limpieza elimina el sarro que el cepillo no puede quitar.</p>
-</div>
-<div style="background: #F6F7EC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font: 500 22px/1.25 'Fraunces', Georgia, serif">Detecta a tiempo</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.55">En cada visita revisamos tus encías y tus dientes.</p>
-</div>
-<div style="background: #F6F7EC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font: 500 22px/1.25 'Fraunces', Georgia, serif">Boca más fresca</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.55">Dientes más limpios y mejor aliento.</p>
+<h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Encías sanas, dientes firmes</h2>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">La encía, el hueso y el ligamento sujetan cada diente. Si se inflaman, el diente pierde soporte. Mantenerlos sanos es clave para conservarlo.</p>
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Ven a revisión si:</span><div style="display: flex; flex-direction: column; gap: 12px"><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Te sangran las encías al cepillarte</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Las notas inflamadas o sensibles</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Tienes mal aliento a menudo</span></div>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Técnicas -->
-<section id="tecnicas" class="sec" style="padding-top: 104px; padding-bottom: 104px">
-<div class="wrap" style="display: flex; flex-direction: column; gap: 96px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
-<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">En la consulta</span>
-<h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Cómo cuidamos tus encías</h2>
-</div>
-
-<article id="t1" class="split">
-<img src="img/limp-profesional.jpg" alt="Limpieza con ultrasonidos" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
-<div style="display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 14px; font-weight: 600; color: #5A6610">En la consulta</span>
-<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Limpieza profesional</h3>
-<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Retiramos la placa y el sarro acumulados en dientes y encías.</p>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Ultrasonidos para quitar el sarro</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Pulido de la superficie del diente</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Consejos de higiene a tu medida</span>
-</div>
-</div>
-</article>
-
-<article id="t2" class="split">
-<div style="display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 14px; font-weight: 600; color: #5A6610">En cada revisión</span>
-<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Revisión de encías</h3>
-<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Comprobamos el estado de la encía y del hueso que sujeta los dientes.</p>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Medición de la encía con sonda</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Radiografías si hacen falta</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Plan si hay enfermedad de las encías</span>
-</div>
-</div>
-<img class="rev" src="img/limp-encias.jpg" alt="Sonda periodontal midiendo la encía en un modelo" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
-</article>
-
-<article id="t3" class="split">
-<img src="img/limp-casa.jpg" alt="Cepillo eléctrico, cepillos interdentales e hilo dental en el baño" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
-<div style="display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 14px; font-weight: 600; color: #5A6610">En casa</span>
-<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Cuidado en casa y mantenimiento</h3>
-<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Te enseñamos a cuidar tus encías en casa y te citamos para revisiones periódicas.</p>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Cepillado y cepillos interdentales</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Hilo dental bien usado</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Revisiones según tu caso</span>
-</div>
-</div>
-</article>
-</div>
-</section>
-
-<!-- Proceso -->
-<section class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #FFFFFF">
+<section id="pasos" class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #F6F7EC">
 <div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
-<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Cómo lo hacemos</span>
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">En la consulta</span>
 <h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Así es la visita</h2>
 </div>
-<ol class="g4" style="margin: 0; padding: 0; list-style: none">
-<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 1</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Revisión</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Miramos dientes y encías.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 2</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Limpieza</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Retiramos el sarro y pulimos los dientes.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 3</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Consejos</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Te explicamos cómo cuidarte en casa.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 4</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Mantenimiento</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Te decimos cada cuánto conviene volver.</span></li>
+<ol class="steps" style="margin: 0; padding: 0; list-style: none; grid-template-columns: repeat(3, minmax(0, 1fr))">
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 1</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Revisión</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Miramos dientes y encías.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 2</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Limpieza</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Retiramos placa y sarro y pulimos.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 3</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Consejos</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Te explicamos cómo cuidarte en casa.</span></li>
 </ol>
 </div>
 </section>
 
-<!-- Banda -->
 <section class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #2E330E; color: #F6F7EC">
 <div class="wrap split">
 <div style="display: flex; flex-direction: column; gap: 24px">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #B2C224">Prevención</span>
 <h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Una limpieza a tiempo evita muchos problemas</h2>
-<p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Unas encías sanas son la base para conservar tus dientes toda la vida.</p><p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Con revisiones periódicas detectamos pronto cualquier inflamación y la tratamos antes de que vaya a más.</p>
+<p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Con revisiones periódicas detectamos pronto cualquier inflamación y la tratamos antes de que vaya a más.</p>
 <div><a class="btn btn-light" href="#cita">Pedir cita</a></div>
 </div>
 <img src="img/limp-banda.jpg" alt="Sonrisa sana con encías cuidadas" style="aspect-ratio: 4 / 5; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
 </section>
 
-<!-- Preguntas -->
 <section id="preguntas" class="sec" style="padding-top: 104px; padding-bottom: 0">
 <div class="wrap split" style="align-items: start; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr)">
 <div style="display: flex; flex-direction: column; gap: 16px">
@@ -216,11 +156,7 @@ section[id]{scroll-margin-top:16px}
 <div style="border-top: 1px solid #DCDFC6">
 <details open="">
 <summary>¿Cada cuánto me hago una limpieza?<span class="plus" aria-hidden="true">+</span></summary>
-<p>Depende de cada persona. Lo habitual es una o dos veces al año, pero te diremos qué te conviene en tu caso.</p>
-</details>
-<details>
-<summary>Me sangran las encías al cepillarme, ¿es normal?<span class="plus" aria-hidden="true">+</span></summary>
-<p>No. Suele ser señal de encías inflamadas. Conviene que te revisemos.</p>
+<p>Depende de cada persona. Lo habitual es una o dos veces al año; te diremos qué te conviene en tu caso.</p>
 </details>
 <details>
 <summary>¿La limpieza daña el esmalte?<span class="plus" aria-hidden="true">+</span></summary>
