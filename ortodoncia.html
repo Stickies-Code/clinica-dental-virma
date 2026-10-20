@@ -46,8 +46,6 @@ details summary::-webkit-details-marker{display:none}
 details summary .plus{flex:none;width:36px;height:36px;border-radius:50%;border:1.5px solid #1E210C;display:flex;align-items:center;justify-content:center;font:400 22px/1 'Figtree',sans-serif;transition:transform .2s ease}
 details[open] summary .plus{transform:rotate(45deg)}
 details p{margin:0 0 24px;max-width:62ch;color:#4B5034;font-size:16px;line-height:1.65}
-.g3t{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-@media (max-width: 1000px){.g3t{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion: reduce){details summary .plus{transition:none}}
 </style>
 <style>
@@ -98,7 +96,7 @@ section[id]{scroll-margin-top:16px}
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Ortodoncia</span>
 <h1 class="h1" style="margin: 0; font: 400 64px/1.05 'Fraunces', Georgia, serif; letter-spacing: -0.025em; text-wrap: balance">Dientes bien alineados, por estética y por salud</h1>
 <p style="margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; color: #4B5034">La ortodoncia corrige la posición de los dientes y de los maxilares. Mejora la sonrisa, pero también la forma de morder y masticar.</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir cita</a><a class="btn btn-ghost" href="#t1">Ver tratamientos</a></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir valoración</a><a class="btn btn-ghost" href="#tecnicas">Ver tratamientos</a></div>
 </div>
 <img src="img/trat-ortodoncia.jpg" alt="Modelo dental alineado y férulas transparentes" style="aspect-ratio: 5 / 4; border-radius: 28px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
@@ -118,7 +116,7 @@ section[id]{scroll-margin-top:16px}
 </div>
 <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4B5034; max-width: 54ch">Puede ser hereditario o deberse a hábitos durante el crecimiento: chuparse el dedo, usar mucho tiempo el chupete o el biberón, o una mala posición de la lengua.</p>
 </div>
-<div class="g3t">
+<div class="g3">
 <div style="background: #F6F7EC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
 <h3 style="margin: 0; font: 500 22px/1.25 'Fraunces', Georgia, serif">Más que estética</h3>
 <p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.55">Unos dientes alineados muerden mejor y son más fáciles de limpiar.</p>
@@ -135,39 +133,49 @@ section[id]{scroll-margin-top:16px}
 </div>
 </section>
 
-<!-- Tipos -->
-<section id="tipos" class="sec" style="padding-top: 104px; padding-bottom: 104px">
-<div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+<!-- Técnicas -->
+<section id="tecnicas" class="sec" style="padding-top: 104px; padding-bottom: 104px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 96px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Tipos de tratamiento</span>
 <h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Un tratamiento para cada etapa</h2>
 </div>
-<div class="g3t">
-<article id="t1" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">En la infancia</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Ortodoncia interceptiva</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">Tratamientos cortos con aparatos sencillos que corrigen problemas mientras la cara crece.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t1" class="split">
+<img src="img/orto-interceptiva.jpg" alt="Aparato expansor infantil sobre un modelo dental" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">En la infancia</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Ortodoncia interceptiva</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Tratamientos cortos con aparatos sencillos que corrigen problemas mientras la cara crece.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Corrige hábitos como el dedo o el chupete</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Trata paladar estrecho o mandíbula desviada</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Evita que el problema vaya a más</span>
 </div>
+</div>
 </article>
-<article id="t2" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">Ideal entre los 10 y los 12 años</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Ortodoncia correctiva</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">Aprovecha el crecimiento y que ya han salido los dientes definitivos.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t2" class="split">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Ideal entre los 10 y los 12 años</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Ortodoncia correctiva</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Aprovecha el crecimiento y que ya han salido los dientes definitivos.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Duración de año y medio a tres años</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Mejor acabado final</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>También para adolescentes</span>
 </div>
+</div>
+<img class="rev" src="img/orto-correctiva.jpg" alt="Modelo dental con brackets y alicates de ortodoncia" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </article>
-<article id="t3" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">Nunca es tarde</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Ortodoncia en adultos</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">También corregimos la posición de los dientes en la edad adulta.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t3" class="split">
+<img src="img/orto-adultos.jpg" alt="Mano sujetando una férula transparente de ortodoncia" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Nunca es tarde</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Ortodoncia en adultos</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">También corregimos la posición de los dientes en la edad adulta.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Coordinada con otros tratamientos dentales</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>En casos complejos, junto a cirugía ortognática</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Plan adaptado a tu caso</span>
 </div>
-</article>
 </div>
+</article>
 </div>
 </section>
 
@@ -181,6 +189,19 @@ section[id]{scroll-margin-top:16px}
 <ol class="g4" style="margin: 0; padding: 0; list-style: none">
 <li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 1</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Primera visita</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Revisamos dientes, mordida y crecimiento.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 2</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Estudio</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Radiografías y fotos para planificar con precisión.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 3</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Plan</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Te explicamos el tratamiento y su duración.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 4</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Seguimiento</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Revisiones periódicas hasta el resultado final.</span></li>
 </ol>
+</div>
+</section>
+
+<!-- Banda -->
+<section class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #2E330E; color: #F6F7EC">
+<div class="wrap split">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #B2C224">Desde pequeños</span>
+<h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">A los 6 años, primera revisión</h2>
+<p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Aunque no veas ningún problema, a esa edad ya podemos ver cómo crecen los maxilares y cómo van a salir los dientes definitivos.</p><p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Detectarlo pronto permite tratamientos más cortos y sencillos.</p>
+<div><a class="btn btn-light" href="#cita">Pedir cita</a></div>
+</div>
+<img src="img/familia-ninos.jpg" alt="Chaval de Cheste sonriendo con un balón" style="aspect-ratio: 4 / 5; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
 </section>
 

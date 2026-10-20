@@ -46,8 +46,6 @@ details summary::-webkit-details-marker{display:none}
 details summary .plus{flex:none;width:36px;height:36px;border-radius:50%;border:1.5px solid #1E210C;display:flex;align-items:center;justify-content:center;font:400 22px/1 'Figtree',sans-serif;transition:transform .2s ease}
 details[open] summary .plus{transform:rotate(45deg)}
 details p{margin:0 0 24px;max-width:62ch;color:#4B5034;font-size:16px;line-height:1.65}
-.g3t{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-@media (max-width: 1000px){.g3t{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion: reduce){details summary .plus{transition:none}}
 </style>
 <style>
@@ -98,7 +96,7 @@ section[id]{scroll-margin-top:16px}
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Endodoncia</span>
 <h1 class="h1" style="margin: 0; font: 400 64px/1.05 'Fraunces', Georgia, serif; letter-spacing: -0.025em; text-wrap: balance">Salvamos tu diente cuando el daño llega al nervio</h1>
 <p style="margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; color: #4B5034">La endodoncia trata el nervio del diente cuando una caries profunda o un golpe lo han dañado. Así conservas tu propio diente.</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir cita</a><a class="btn btn-ghost" href="#t1">Nuestra tecnología</a></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap"><a class="btn btn-primary" href="#cita">Pedir valoración</a><a class="btn btn-ghost" href="#tecnicas">Nuestra tecnología</a></div>
 </div>
 <img src="img/trat-endodoncia.jpg" alt="Limas de endodoncia rotatoria y microscopio" style="aspect-ratio: 5 / 4; border-radius: 28px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
@@ -118,7 +116,7 @@ section[id]{scroll-margin-top:16px}
 </div>
 <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4B5034; max-width: 54ch">Es el tratamiento del tejido nervioso del diente. Limpiamos el interior del diente, lo desinfectamos y lo sellamos para que deje de doler y no se infecte.</p>
 </div>
-<div class="g3t">
+<div class="g3">
 <div style="background: #F6F7EC; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
 <h3 style="margin: 0; font: 500 22px/1.25 'Fraunces', Georgia, serif">Conservas tu diente</h3>
 <p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.55">Evita tener que extraerlo.</p>
@@ -135,39 +133,49 @@ section[id]{scroll-margin-top:16px}
 </div>
 </section>
 
-<!-- Tipos -->
-<section id="tipos" class="sec" style="padding-top: 104px; padding-bottom: 104px">
-<div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+<!-- Técnicas -->
+<section id="tecnicas" class="sec" style="padding-top: 104px; padding-bottom: 104px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 96px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
 <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5A6610">Tecnología</span>
 <h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">El equipo que usamos</h2>
 </div>
-<div class="g3t">
-<article id="t1" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">Medición</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Localizador de ápices</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">Mide con exactitud la longitud de cada conducto del diente.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t1" class="split">
+<img src="img/endo-localizador.jpg" alt="Localizador de ápices en la bandeja" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Para medir cada conducto</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Localizador de ápices</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Mide con exactitud la longitud de cada conducto del diente.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Más precisión</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Resultado más predecible</span>
 </div>
+</div>
 </article>
-<article id="t2" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">Limpieza</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Endodoncia rotatoria</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">Un motor con limas flexibles limpia y da forma a los conductos.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t2" class="split">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Para limpiar los conductos</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Endodoncia rotatoria</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Un motor con limas flexibles limpia y da forma a los conductos.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Limpieza más uniforme</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Tratamiento más rápido</span>
 </div>
+</div>
+<img class="rev" src="img/endo-rotatoria.jpg" alt="Motor de endodoncia rotatoria con una lima" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </article>
-<article id="t3" style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #ECF0C8; color: #1E210C; font-size: 13px; font-weight: 600">Sellado</span>
-<h3 style="margin: 0; font: 400 30px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.01em">Gutapercha termoplástica</h3>
-<p style="margin: 0; color: #4B5034; font-size: 16px; line-height: 1.6">Un horno calienta el material de sellado para rellenar bien los conductos.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 18px; margin-top: auto; border-top: 1px solid #E9EBD3">
+
+<article id="t3" class="split">
+<img src="img/endo-gutapercha.jpg" alt="Puntas de gutapercha y aparato de obturación" style="aspect-ratio: 4 / 3; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; font-weight: 600; color: #5A6610">Para sellar el diente</span>
+<h3 class="h2" style="margin: 0; font: 400 38px/1.15 'Fraunces', Georgia, serif; letter-spacing: -0.015em">Gutapercha termoplástica</h3>
+<p style="margin: 0; color: #4B5034; font-size: 17px; line-height: 1.65; max-width: 52ch">Un horno calienta el material de sellado para rellenar bien los conductos.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
 <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Sellado más completo</span><span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E210C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>Mejor resultado a largo plazo</span>
 </div>
-</article>
 </div>
+</article>
 </div>
 </section>
 
@@ -181,6 +189,19 @@ section[id]{scroll-margin-top:16px}
 <ol class="g4" style="margin: 0; padding: 0; list-style: none">
 <li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 1</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Diagnóstico</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Exploración y radiografía para ver el estado del diente.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 2</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Anestesia</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Trabajamos con anestesia local para que estés cómodo.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 3</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Limpieza y sellado</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Limpiamos los conductos y los sellamos.</span></li><li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 3px solid #B2C224"><span style="font: 500 15px/1 'Fraunces', Georgia, serif; color: #5A6610">Paso 4</span><strong style="font: 500 21px/1.25 'Fraunces', Georgia, serif">Reconstrucción</strong><span style="color: #4B5034; font-size: 15px; line-height: 1.55">Devolvemos al diente su forma y su función.</span></li>
 </ol>
+</div>
+</section>
+
+<!-- Banda -->
+<section class="sec" style="padding-top: 104px; padding-bottom: 104px; background: #2E330E; color: #F6F7EC">
+<div class="wrap split">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #B2C224">Tecnología</span>
+<h2 class="h2" style="margin: 0; font: 400 46px/1.1 'Fraunces', Georgia, serif; letter-spacing: -0.02em; text-wrap: balance">Precisión para salvar tu diente</h2>
+<p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Trabajamos con localizador de ápices, motor de endodoncia rotatoria y horno para obturación con gutapercha termoplástica.</p><p style="margin: 0; color: #E9EDC4; font-size: 17px; line-height: 1.65; max-width: 52ch">Una técnica más precisa mejora el resultado, es más rápida y resulta más cómoda para ti.</p>
+<div><a class="btn btn-light" href="#cita">Pedir cita</a></div>
+</div>
+<img src="img/endo-banda.jpg" alt="Gabinete dental preparado para un tratamiento" style="aspect-ratio: 4 / 5; border-radius: 24px; width: 100%; max-width: 100%; object-fit: cover; display: block">
 </div>
 </section>
 
